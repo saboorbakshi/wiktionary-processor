@@ -32,10 +32,10 @@ def should_keep(entry):
         return False
     
     # Filter out unwanted gloss patterns
-    unwanted_starts = ['Plural', 'plural', 'Alternative', 'alternative', 
-                       'Obsolete', 'obsolete', 'Abbreviation', 'abbreviation']
-    if any(first_gloss.startswith(prefix) for prefix in unwanted_starts):
-        return False
+    # unwanted_starts = ['Plural', 'plural', 'Alternative', 'alternative', 
+    #                    'Obsolete', 'obsolete', 'Abbreviation', 'abbreviation']
+    # if any(first_gloss.startswith(prefix) for prefix in unwanted_starts):
+    #     return False
     
     # Check word exists and format
     word = entry.get('word', '')
